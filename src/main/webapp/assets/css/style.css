@@ -1,0 +1,57 @@
+:root{
+  --bg: #0b1020;
+  --panel: #111834;
+  --text: #e6e9f2;
+  --muted: #9aa3b2;
+  --brand: #5ca1ff;
+  --brand-2: #7cf0c4;
+  --shadow: rgba(0,0,0,.25);
+  --radius: 18px;
+}
+*{ box-sizing: border-box; }
+html, body{ margin:0; padding:0; }
+body{
+  font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: linear-gradient(180deg, var(--bg), #0f1732 60%, #0e142a);
+  color: var(--text);
+}
+
+.container{ width:min(1120px, 92%); margin-inline:auto; }
+.site-header{
+  position: sticky; top: 0; backdrop-filter: blur(6px);
+  background: rgba(11,16,32,.6); border-bottom: 1px solid rgba(255,255,255,.06);
+}
+.nav{ display:flex; align-items:center; justify-content:space-between; padding:14px 0; }
+.brand{ display:flex; align-items:center; gap:10px; }
+.logo{ width:34px; height:34px; }
+.brand-text{ font-weight:800; letter-spacing:.2px; text-transform: lowercase; }
+
+nav a{
+  color:var(--muted); text-decoration:none; margin-left:18px; font-weight:600;
+  padding:8px 10px; border-radius: 10px; transition:.15s ease;
+}
+nav a:hover, nav a.active{ color:var(--text); background: rgba(255,255,255,.06); }
+
+.hero{ padding: 64px 0 32px 0; text-align:center; }
+.hero h1{ font-size: clamp(36px, 6vw, 60px); margin:0 0 10px 0; }
+.hero p{ color:var(--muted); margin:0 auto 22px auto; max-width: 720px; }
+.cta{ display:flex; gap:12px; justify-content:center; }
+.button{
+  display:inline-block; padding:12px 18px; border-radius: 999px; text-decoration:none;
+  border:1px solid rgba(255,255,255,.12); color: var(--text); font-weight:700;
+  box-shadow: 0 10px 30px var(--shadow);
+}
+.button.primary{ background: linear-gradient(135deg, var(--brand), var(--brand-2)); color:#08101d; }
+.button.ghost{ background: transparent; }
+
+.features{ display:grid; grid-template-columns: repeat(auto-fit, minmax(240px,1fr)); gap:16px; padding: 12px 0 48px 0; }
+.card{
+  background: var(--panel); border:1px solid rgba(255,255,255,.06); border-radius: var(--radius);
+  padding:18px; box-shadow: 0 20px 50px var(--shadow);
+}
+.card h3{ margin:0 0 8px 0; }
+.card p{ margin:0; color:var(--muted); }
+
+.grid{ display:grid; grid-template-columns: repeat(auto-fit, minmax(260px,1fr)); gap:16px; padding: 28px 0 48px 0; }
+.content{ padding: 28px 0 48px 0; max-width: 800px; }
+.site-footer{ padding: 28px 0 46px 0; color:var(--muted); border-top: 1px solid rgba(255,255,255,.06); margin-top: 24px; }
