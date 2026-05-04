@@ -4,13 +4,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.class24.nes</groupId>
-  <artifactId>nes-academy-class24</artifactId>
+  <groupId>com.class27.nes</groupId>
+  <artifactId>nes-academy-class27</artifactId>
   <version>1.0.0</version>
-  <name>new era solutions academy class24</name>
+  <name>new era solutions academy class27</name>
   <packaging>war</packaging>
   <description>Tomcat-ready WAR with clean separation of servlet and static UI</description>
-  <url>https://example.com/class24</url>
+  <url>https://example.com/class27</url>
 
   <properties>
     <maven.compiler.source>17</maven.compiler.source>
@@ -36,7 +36,7 @@
         <version>3.4.0</version>
         <configuration>
           <failOnMissingWebXml>false</failOnMissingWebXml>
-          <warName>nes-academy-class24</warName>
+          <warName>nes-academy-class27</warName>
         </configuration>
       </plugin>
     <plugin>
@@ -44,7 +44,7 @@
       <artifactId>tomcat7-maven-plugin</artifactId>
       <version>2.2</version>
       <configuration>
-        <path>/class24</path>
+        <path>/class27</path>
         <port>8080</port>
       </configuration>
     </plugin>

@@ -1,4 +1,4 @@
-package com.class24.nes.web;
+package com.class27.nes.web;
 
 import java.io.IOException;
 import jakarta.servlet.ServletException;
