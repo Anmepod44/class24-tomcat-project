@@ -5,41 +5,63 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Courses · class27</title>
   <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
+
   <header class="site-header">
     <div class="container nav">
-      <div class="brand">
-        <img src="assets/img/logo.svg" alt="NESA" class="logo"/>
+      <a href="index.html" class="brand">
+        <img src="assets/img/logo.svg" alt="NESA logo" class="logo" />
         <span class="brand-text">new era solutions academy</span>
-      </div>
-      <nav>
+      </a>
+      <nav aria-label="Main navigation">
         <a href="index.html">Home</a>
-        <a class="active" href="courses.html">Courses</a>
+        <a href="courses.html" class="active">Courses</a>
         <a href="about.html">About</a>
       </nav>
     </div>
   </header>
 
-  <main class="container grid">
-    <article class="course-card card">
-      <h3>Full‑Stack Java</h3>
-      <p>Java, Servlets/JSP, JDBC, REST APIs, and deployment to Tomcat.</p>
-    </article>
-    <article class="course-card card">
-      <h3>DevOps Essentials</h3>
-      <p>Maven, Nexus, CI/CD, Docker, and cloud deployments.</p>
-    </article>
-    <article class="course-card card">
-      <h3>Cloud Deployments</h3>
-      <p>AWS, EC2, IAM, networking, observability, and automation.</p>
-    </article>
-  </main>
+  <div class="container">
+    <div class="page-hero">
+      <h1>Courses</h1>
+      <p>Three focused tracks covering the full stack of modern software delivery.</p>
+    </div>
+
+    <main class="grid" aria-label="Course listings">
+      <article class="card course-card">
+        <span class="card-tag">Java</span>
+        <span class="card-icon">☕</span>
+        <h3>Full-Stack Java</h3>
+        <p>Java, Servlets/JSP, JDBC, REST APIs, and deployment to Tomcat. Build real apps from scratch.</p>
+      </article>
+      <article class="card course-card">
+        <span class="card-tag">DevOps</span>
+        <span class="card-icon">🔧</span>
+        <h3>DevOps Essentials</h3>
+        <p>Maven, Nexus, CI/CD pipelines, Docker, and cloud deployments. Automate everything.</p>
+      </article>
+      <article class="card course-card">
+        <span class="card-tag">Cloud</span>
+        <span class="card-icon">☁️</span>
+        <h3>Cloud Deployments</h3>
+        <p>AWS, EC2, IAM, networking, observability, and infrastructure automation at scale.</p>
+      </article>
+    </main>
+  </div>
 
   <footer class="site-footer">
-    <div class="container">
+    <div class="container footer-inner">
       <small>© 2025 new era solutions academy class27</small>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="courses.html">Courses</a>
+        <a href="about.html">About</a>
+      </nav>
     </div>
   </footer>
+
 </body>
 </html>

@@ -42,13 +42,13 @@ Explanation: If Tomcat started correctly, you should see the default Tomcat welc
 
 If you built your Maven project and have a WAR file:
 
-cp target/nes-academy-class24.war ~/tomcat11/webapps/
+cp target/nes-academy-class27.war ~/tomcat11/webapps/
 
 Explanation: Copying the WAR file into webapps/ makes Tomcat automatically unpack and deploy it. The app will then be available at:
 
-http://localhost:8080/nes-academy-class24/
+http://localhost:8080/nes-academy-class27/
 
-http://localhost:8080/nes-academy-class24/home
+http://localhost:8080/nes-academy-class27/home
 
 ## 7. Stop Tomcat
 
@@ -116,8 +116,8 @@ Or deploy via API:
 
  curl -u deployer:StrongPass! \
 
-  --upload-file target/nes-academy-class24.war \
+  --upload-file target/nes-academy-class27.war \
 
-  "http://localhost:8080/manager/text/deploy?path=/class24&update=true"
+  "http://localhost:8080/manager/text/deploy?path=/class27&update=true"
 
 **

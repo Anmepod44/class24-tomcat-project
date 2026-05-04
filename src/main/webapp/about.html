@@ -5,36 +5,53 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About · class27</title>
   <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
+
   <header class="site-header">
     <div class="container nav">
-      <div class="brand">
-        <img src="assets/img/logo.svg" alt="NESA" class="logo"/>
+      <a href="index.html" class="brand">
+        <img src="assets/img/logo.svg" alt="NESA logo" class="logo" />
         <span class="brand-text">new era solutions academy</span>
-      </div>
-      <nav>
+      </a>
+      <nav aria-label="Main navigation">
         <a href="index.html">Home</a>
         <a href="courses.html">Courses</a>
-        <a class="active" href="about.html">About</a>
+        <a href="about.html" class="active">About</a>
       </nav>
     </div>
   </header>
 
-  <main class="container content">
-    <h1>About Class27</h1>
-    <p>Class27 distills the essentials of modern software delivery: build with Maven, store in Nexus, deploy to Tomcat. Our focus is clarity, repetition, and clean code.</p>
-    <ul>
-      <li>Short, frequent labs</li>
-      <li>Code reviews and demos</li>
-      <li>Deploy early, deploy often</li>
-    </ul>
-  </main>
+  <div class="container">
+    <div class="page-hero">
+      <h1>About Class27</h1>
+      <p>Distilling the essentials of modern software delivery — one clean pipeline at a time.</p>
+    </div>
+
+    <main class="content">
+      <p>Class27 focuses on the full delivery lifecycle: build with Maven, store artifacts in Nexus, and deploy to Tomcat. Every concept is reinforced through repetition and real code — no fluff, no filler.</p>
+      <p>Our approach is simple: ship early, ship often, and learn from every deployment.</p>
+      <ul>
+        <li>Short, frequent labs that build on each other</li>
+        <li>Code reviews and live demos every week</li>
+        <li>Deploy early, deploy often</li>
+        <li>Portfolio-ready projects by graduation</li>
+      </ul>
+    </main>
+  </div>
 
   <footer class="site-footer">
-    <div class="container">
+    <div class="container footer-inner">
       <small>© 2025 new era solutions academy class27</small>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="courses.html">Courses</a>
+        <a href="about.html">About</a>
+      </nav>
     </div>
   </footer>
+
 </body>
 </html>
